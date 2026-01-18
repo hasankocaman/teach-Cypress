@@ -1,0 +1,222 @@
+{
+    "nav": {
+        "home": "Home",
+        "practice": "Practice Area",
+        "settings": "Settings",
+        "backToHomepage": "Back to hasankocaman.net"
+    },
+    "controls": {
+        "theme": "Theme",
+        "language": "Language",
+        "darkMode": "Dark Mode",
+        "lightMode": "Light Mode",
+        "english": "English",
+        "turkish": "Turkish",
+        "nextLesson": "Next Lesson",
+        "previousLesson": "Previous Lesson",
+        "markComplete": "Mark as Complete",
+        "copyCode": "Copy Code",
+        "copied": "Copied!"
+    },
+    "progress": {
+        "title": "Your Progress",
+        "completed": "{{count}} of {{total}} lessons completed",
+        "percentComplete": "{{percent}}% Complete",
+        "resetProgress": "Reset Progress"
+    },
+    "levels": {
+        "introduction": {
+            "title": "Introduction & Installation",
+            "description": "Get started with Cypress testing fundamentals"
+        },
+        "selectors": {
+            "title": "Basic Selectors",
+            "description": "Learn how to find and select elements"
+        },
+        "interaction": {
+            "title": "Interacting with Elements",
+            "description": "Master element interactions and commands"
+        },
+        "assertions": {
+            "title": "Assertions",
+            "description": "Verify and validate application behavior"
+        },
+        "advanced": {
+            "title": "Advanced Integration Testing",
+            "description": "Network requests, API mocking, and more"
+        }
+    },
+    "lessons": {
+        "intro_what_is_cypress": {
+            "title": "What is Cypress?",
+            "description": "Learn about Cypress and why it's a powerful testing framework",
+            "content": "Cypress is a next-generation front-end testing tool built for the modern web. It addresses the key pain points developers and QA engineers face when testing modern applications.",
+            "concepts": {
+                "title": "Key Concepts",
+                "items": [
+                    "**Fast, Easy and Reliable**: Cypress runs much faster than traditional testing tools because it operates directly in the browser",
+                    "**Time Travel**: Cypress takes snapshots as tests run, allowing you to hover over commands to see exactly what happened",
+                    "**Real-time Reloads**: Automatically reloads whenever you make changes to your tests",
+                    "**Debuggable**: Readable errors and stack traces make debugging lightning fast"
+                ]
+            }
+        },
+        "intro_installation": {
+            "title": "Installation & Setup",
+            "description": "Install Cypress and configure your first project",
+            "content": "Setting up Cypress is straightforward. Let's walk through the installation process step by step.",
+            "steps": [
+                "Install Cypress via npm: `npm install --save-dev cypress`",
+                "Open Cypress for the first time: `npx cypress open`",
+                "Select E2E Testing",
+                "Choose your preferred browser"
+            ]
+        },
+        "intro_first_test": {
+            "title": "Your First Test",
+            "description": "Write and run your first Cypress test",
+            "content": "Let's create a simple test to verify that a page loads correctly."
+        },
+        "selectors_get": {
+            "title": "Using cy.get()",
+            "description": "Select elements using CSS selectors",
+            "content": "`cy.get()` is the most fundamental command in Cypress. It allows you to select DOM elements using CSS selectors.",
+            "concepts": {
+                "title": "Why cy.get()?",
+                "items": [
+                    "**Chainable**: Returns elements that can be further interacted with",
+                    "**Retry-able**: Automatically retries until element is found or timeout",
+                    "**Flexible**: Accepts any valid CSS selector"
+                ]
+            }
+        },
+        "selectors_contains": {
+            "title": "Using cy.contains()",
+            "description": "Find elements by their text content",
+            "content": "`cy.contains()` allows you to select elements based on their text content, making tests more readable and maintainable."
+        },
+        "selectors_find": {
+            "title": "Using .find()",
+            "description": "Search within previously selected elements",
+            "content": "The `.find()` command searches for descendant elements within a previously yielded element."
+        },
+        "interaction_click": {
+            "title": "Clicking Elements",
+            "description": "Learn how to click buttons and links",
+            "content": "The `.click()` command simulates a user clicking on an element."
+        },
+        "interaction_type": {
+            "title": "Typing Text",
+            "description": "Input text into form fields",
+            "content": "The `.type()` command simulates a user typing into an input field, with support for special characters and modifiers."
+        },
+        "interaction_check": {
+            "title": "Checkboxes & Radio Buttons",
+            "description": "Interact with checkboxes and radio buttons",
+            "content": "Use `.check()` and `.uncheck()` to interact with checkboxes and radio buttons."
+        },
+        "interaction_select": {
+            "title": "Select Dropdowns",
+            "description": "Work with dropdown select elements",
+            "content": "The `.select()` command allows you to choose options from a `<select>` element."
+        },
+        "assertions_should": {
+            "title": "Basic Assertions with .should()",
+            "description": "Verify element properties and states",
+            "content": "The `.should()` command creates assertions about the state of elements.",
+            "concepts": {
+                "title": "Why .should()?",
+                "items": [
+                    "**Readable**: Creates human-readable test assertions",
+                    "**Retry-able**: Automatically retries until assertion passes or timeout",
+                    "**Chainable**: Can chain multiple assertions together"
+                ]
+            }
+        },
+        "assertions_expect": {
+            "title": "Using expect()",
+            "description": "Traditional BDD-style assertions",
+            "content": "`expect()` provides traditional assertion syntax for more complex validations."
+        },
+        "assertions_visibility": {
+            "title": "Visibility Assertions",
+            "description": "Test element visibility states",
+            "content": "Learn how to verify if elements are visible, hidden, or exist in the DOM."
+        },
+        "advanced_intercept": {
+            "title": "Network Interception",
+            "description": "Mock and spy on network requests",
+            "content": "`cy.intercept()` allows you to stub and modify network requests, making it easy to test different scenarios.",
+            "concepts": {
+                "title": "Why cy.intercept()?",
+                "items": [
+                    "**Control Network**: Stub API responses for consistent tests",
+                    "**Test Edge Cases**: Simulate errors and edge cases",
+                    "**Performance**: Tests run faster without waiting for real API calls"
+                ]
+            }
+        },
+        "advanced_fixtures": {
+            "title": "Using Fixtures",
+            "description": "Load test data from external files",
+            "content": "Fixtures allow you to store test data in separate files, keeping your tests clean and maintainable."
+        },
+        "advanced_custom_commands": {
+            "title": "Custom Commands",
+            "description": "Create reusable test commands",
+            "content": "Custom commands let you create reusable functions that can be called throughout your tests."
+        }
+    },
+    "practice": {
+        "title": "Practice Area",
+        "description": "Test your Cypress skills on these interactive elements",
+        "tabs": {
+            "forms": "Forms",
+            "buttons": "Buttons",
+            "tables": "Tables"
+        },
+        "instructions": {
+            "title": "Testing Instructions",
+            "forms": "Try selecting inputs, typing text, checking boxes, and selecting options.",
+            "buttons": "Click buttons, verify text changes, and test disabled states.",
+            "tables": "Select table rows, filter data, and interact with table elements."
+        },
+        "sampleForm": {
+            "title": "Sample Form",
+            "name": "Full Name",
+            "email": "Email Address",
+            "password": "Password",
+            "country": "Country",
+            "selectCountry": "Select a country",
+            "interests": "Interests",
+            "newsletter": "Subscribe to newsletter",
+            "terms": "I agree to the terms and conditions",
+            "submit": "Submit Form",
+            "formSubmitted": "Form submitted successfully!"
+        },
+        "sampleButtons": {
+            "title": "Button Examples",
+            "clickMe": "Click Me",
+            "clicked": "Clicked {{count}} times",
+            "toggle": "Toggle",
+            "disabled": "Disabled Button",
+            "loading": "Loading..."
+        },
+        "sampleTable": {
+            "title": "User Data Table",
+            "search": "Search...",
+            "name": "Name",
+            "email": "Email",
+            "role": "Role",
+            "status": "Status",
+            "actions": "Actions",
+            "view": "View",
+            "edit": "Edit",
+            "delete": "Delete"
+        }
+    },
+    "footer": {
+        "builtWith": "Built with ❤️ for learning Cypress",
+        "version": "Version 1.0.0"
+    }
+}

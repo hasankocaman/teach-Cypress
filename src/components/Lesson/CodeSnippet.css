@@ -1,0 +1,66 @@
+.code-snippet-container {
+    margin: var(--spacing-lg) 0;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-background-secondary);
+}
+
+.code-snippet-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background-color: var(--color-background-tertiary);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.code-language {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--color-text-tertiary);
+    letter-spacing: 0.05em;
+}
+
+.copy-button {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    font-size: 0.75rem;
+}
+
+.copy-label {
+    font-size: 0.75rem;
+}
+
+.code-snippet-content {
+    margin: 0;
+    padding: var(--spacing-lg);
+    background-color: var(--color-background-secondary);
+    overflow-x: auto;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+.code-snippet-content code {
+    font-family: var(--font-mono);
+    color: var(--color-text-primary);
+    background: none;
+    padding: 0;
+}
+
+/* Syntax highlighting colors */
+.code-snippet-content code {
+    background: none;
+}
+
+/* Simple syntax coloring */
+[data-theme="light"] .code-snippet-content {
+    color: #1e293b;
+}
+
+[data-theme="dark"] .code-snippet-content {
+    color: #e2e8f0;
+}

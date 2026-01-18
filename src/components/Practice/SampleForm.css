@@ -1,0 +1,54 @@
+.sample-form-container {
+    max-width: 600px;
+}
+
+.sample-form-container h3 {
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-text-primary);
+}
+
+.form-success {
+    padding: var(--spacing-md);
+    background-color: rgba(16, 185, 129, 0.1);
+    color: var(--color-success);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--spacing-lg);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: var(--spacing-lg);
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: var(--spacing-sm);
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    font-size: 0.875rem;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.checkbox-label input[type="checkbox"] {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+}
+
+.checkbox-label span {
+    color: var(--color-text-secondary);
+}

@@ -1,0 +1,222 @@
+{
+    "nav": {
+        "home": "Ana Sayfa",
+        "practice": "Pratik Alanı",
+        "settings": "Ayarlar",
+        "backToHomepage": "hasankocaman.net sayfasına dön"
+    },
+    "controls": {
+        "theme": "Tema",
+        "language": "Dil",
+        "darkMode": "Karanlık Mod",
+        "lightMode": "Aydınlık Mod",
+        "english": "İngilizce",
+        "turkish": "Türkçe",
+        "nextLesson": "Sonraki Ders",
+        "previousLesson": "Önceki Ders",
+        "markComplete": "Tamamlandı Olarak İşaretle",
+        "copyCode": "Kodu Kopyala",
+        "copied": "Kopyalandı!"
+    },
+    "progress": {
+        "title": "İlerlemeniz",
+        "completed": "{{total}} dersin {{count}} tanesi tamamlandı",
+        "percentComplete": "%{{percent}} Tamamlandı",
+        "resetProgress": "İlerlemeni Resetle"
+    },
+    "levels": {
+        "introduction": {
+            "title": "Giriş ve Kurulum",
+            "description": "Cypress test temellerine başlayın"
+        },
+        "selectors": {
+            "title": "Temel Seçiciler",
+            "description": "Elementleri nasıl bulup seçeceğinizi öğrenin"
+        },
+        "interaction": {
+            "title": "Elementlerle Etkileşim",
+            "description": "Element etkileşimleri ve komutlarında ustalaşın"
+        },
+        "assertions": {
+            "title": "Doğrulamalar",
+            "description": "Uygulama davranışını doğrulayın ve onaylayın"
+        },
+        "advanced": {
+            "title": "İleri Düzey Entegrasyon Testleri",
+            "description": "Ağ istekleri, API mocklama ve daha fazlası"
+        }
+    },
+    "lessons": {
+        "intro_what_is_cypress": {
+            "title": "Cypress Nedir?",
+            "description": "Cypress hakkında bilgi edinin ve neden güçlü bir test framework'ü olduğunu öğrenin",
+            "content": "Cypress, modern web için oluşturulmuş yeni nesil bir ön uç test aracıdır. Geliştiricilerin ve QA mühendislerinin modern uygulamaları test ederken karşılaştığı temel sorunları ele alır.",
+            "concepts": {
+                "title": "Temel Kavramlar",
+                "items": [
+                    "**Hızlı, Kolay ve Güvenilir**: Cypress geleneksel test araçlarından çok daha hızlı çalışır çünkü doğrudan tarayıcıda çalışır",
+                    "**Zaman Yolculuğu**: Cypress testler çalışırken anlık görüntüler alır, komutların üzerine gelerek tam olarak ne olduğunu görebilirsiniz",
+                    "**Gerçek Zamanlı Yenileme**: Testlerinizde değişiklik yaptığınızda otomatik olarak yeniden yüklenir",
+                    "**Hata Ayıklanabilir**: Okunabilir hatalar ve yığın izleri hata ayıklamayı çok hızlı yapar"
+                ]
+            }
+        },
+        "intro_installation": {
+            "title": "Kurulum ve Yapılandırma",
+            "description": "Cypress'i kurun ve ilk projenizi yapılandırın",
+            "content": "Cypress'i kurmak basittir. Kurulum sürecini adım adım inceleyelim.",
+            "steps": [
+                "Cypress'i npm ile kurun: `npm install --save-dev cypress`",
+                "Cypress'i ilk kez açın: `npx cypress open`",
+                "E2E Testing'i seçin",
+                "Tercih ettiğiniz tarayıcıyı seçin"
+            ]
+        },
+        "intro_first_test": {
+            "title": "İlk Testiniz",
+            "description": "İlk Cypress testinizi yazın ve çalıştırın",
+            "content": "Bir sayfanın doğru yüklendiğini doğrulamak için basit bir test oluşturalım."
+        },
+        "selectors_get": {
+            "title": "cy.get() Kullanımı",
+            "description": "CSS seçicileri kullanarak elementleri seçin",
+            "content": "`cy.get()` Cypress'teki en temel komuttur. CSS seçicileri kullanarak DOM elementlerini seçmenizi sağlar.",
+            "concepts": {
+                "title": "Neden cy.get()?",
+                "items": [
+                    "**Zincirleme**: Daha fazla etkileşime girebilecek elementler döndürür",
+                    "**Tekrar Deneme**: Element bulunana veya zaman aşımı olana kadar otomatik olarak yeniden dener",
+                    "**Esnek**: Herhangi bir geçerli CSS seçiciyi kabul eder"
+                ]
+            }
+        },
+        "selectors_contains": {
+            "title": "cy.contains() Kullanımı",
+            "description": "Metin içeriğine göre elementleri bulun",
+            "content": "`cy.contains()` metin içeriğine göre elementleri seçmenizi sağlar, testleri daha okunabilir ve sürdürülebilir yapar."
+        },
+        "selectors_find": {
+            "title": ".find() Kullanımı",
+            "description": "Daha önce seçilen elementler içinde arama yapın",
+            "content": "`.find()` komutu, daha önce seçilen bir elementin alt elementlerini arar."
+        },
+        "interaction_click": {
+            "title": "Elementlere Tıklama",
+            "description": "Butonlara ve linklere nasıl tıklanacağını öğrenin",
+            "content": "`.click()` komutu bir kullanıcının bir elemente tıklamasını simüle eder."
+        },
+        "interaction_type": {
+            "title": "Metin Yazma",
+            "description": "Form alanlarına metin girin",
+            "content": "`.type()` komutu bir kullanıcının bir giriş alanına yazmasını simüle eder, özel karakterler ve değiştiriciler için destek sağlar."
+        },
+        "interaction_check": {
+            "title": "Onay Kutuları ve Radyo Düğmeleri",
+            "description": "Onay kutuları ve radyo düğmeleriyle etkileşime geçin",
+            "content": "Onay kutuları ve radyo düğmeleriyle etkileşim kurmak için `.check()` ve `.uncheck()` kullanın."
+        },
+        "interaction_select": {
+            "title": "Açılır Listeler",
+            "description": "Açılır liste select elementleriyle çalışın",
+            "content": "`.select()` komutu bir `<select>` elementinden seçenekleri seçmenizi sağlar."
+        },
+        "assertions_should": {
+            "title": ".should() ile Temel Doğrulamalar",
+            "description": "Element özellikleri ve durumlarını doğrulayın",
+            "content": "`.should()` komutu elementlerin durumu hakkında doğrulamalar oluşturur.",
+            "concepts": {
+                "title": "Neden .should()?",
+                "items": [
+                    "**Okunabilir**: İnsan tarafından okunabilir test doğrulamaları oluşturur",
+                    "**Tekrar Deneme**: Doğrulama geçene veya zaman aşımı olana kadar otomatik olarak yeniden dener",
+                    "**Zincirleme**: Birden fazla doğrulamayı birbirine zincirleyebilir"
+                ]
+            }
+        },
+        "assertions_expect": {
+            "title": "expect() Kullanımı",
+            "description": "Geleneksel BDD stili doğrulamalar",
+            "content": "`expect()` daha karmaşık doğrulamalar için geleneksel doğrulama sözdizimi sağlar."
+        },
+        "assertions_visibility": {
+            "title": "Görünürlük Doğrulamaları",
+            "description": "Element görünürlük durumlarını test edin",
+            "content": "Elementlerin görünür, gizli veya DOM'da mevcut olup olmadığını nasıl doğrulayacağınızı öğrenin."
+        },
+        "advanced_intercept": {
+            "title": "Ağ İnterception",
+            "description": "Ağ isteklerini mocklayın ve izleyin",
+            "content": "`cy.intercept()` ağ isteklerini stublamak ve değiştirmenize olanak tanır, farklı senaryoları test etmeyi kolaylaştırır.",
+            "concepts": {
+                "title": "Neden cy.intercept()?",
+                "items": [
+                    "**Ağ Kontrolü**: Tutarlı testler için API yanıtlarını stubleyin",
+                    "**Uç Durumları Test Edin**: Hataları ve uç durumları simüle edin",
+                    "**Performans**: Gerçek API çağrılarını beklemeden testler daha hızlı çalışır"
+                ]
+            }
+        },
+        "advanced_fixtures": {
+            "title": "Fixture Kullanımı",
+            "description": "Harici dosyalardan test verilerini yükleyin",
+            "content": "Fixture'lar test verilerini ayrı dosyalarda saklamanıza olanak tanır, testlerinizi temiz ve sürdürülebilir tutar."
+        },
+        "advanced_custom_commands": {
+            "title": "Özel Komutlar",
+            "description": "Yeniden kullanılabilir test komutları oluşturun",
+            "content": "Özel komutlar, testleriniz boyunca çağrılabilecek yeniden kullanılabilir fonksiyonlar oluşturmanıza olanak tanır."
+        }
+    },
+    "practice": {
+        "title": "Pratik Alanı",
+        "description": "Bu etkileşimli elementler üzerinde Cypress becerilerinizi test edin",
+        "tabs": {
+            "forms": "Formlar",
+            "buttons": "Butonlar",
+            "tables": "Tablolar"
+        },
+        "instructions": {
+            "title": "Test Talimatları",
+            "forms": "Girdileri seçmeyi, metin yazmayı, kutuları işaretlemeyi ve seçenekleri seçmeyi deneyin.",
+            "buttons": "Butonlara tıklayın, metin değişikliklerini doğrulayın ve devre dışı durumları test edin.",
+            "tables": "Tablo satırlarını seçin, verileri filtreleyin ve tablo elementleriyle etkileşime geçin."
+        },
+        "sampleForm": {
+            "title": "Örnek Form",
+            "name": "Ad Soyad",
+            "email": "E-posta Adresi",
+            "password": "Şifre",
+            "country": "Ülke",
+            "selectCountry": "Bir ülke seçin",
+            "interests": "İlgi Alanları",
+            "newsletter": "Bültene abone ol",
+            "terms": "Şartları ve koşulları kabul ediyorum",
+            "submit": "Formu Gönder",
+            "formSubmitted": "Form başarıyla gönderildi!"
+        },
+        "sampleButtons": {
+            "title": "Buton Örnekleri",
+            "clickMe": "Bana Tıkla",
+            "clicked": "{{count}} kez tıklandı",
+            "toggle": "Aç/Kapat",
+            "disabled": "Devre Dışı Buton",
+            "loading": "Yükleniyor..."
+        },
+        "sampleTable": {
+            "title": "Kullanıcı Veri Tablosu",
+            "search": "Ara...",
+            "name": "İsim",
+            "email": "E-posta",
+            "role": "Rol",
+            "status": "Durum",
+            "actions": "İşlemler",
+            "view": "Görüntüle",
+            "edit": "Düzenle",
+            "delete": "Sil"
+        }
+    },
+    "footer": {
+        "builtWith": "Cypress öğrenmek için ❤️ ile yapıldı",
+        "version": "Sürüm 1.0.0"
+    }
+}
