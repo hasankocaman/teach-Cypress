@@ -3,7 +3,8 @@
         "home": "Ana Sayfa",
         "practice": "Pratik Alanı",
         "settings": "Ayarlar",
-        "backToHomepage": "hasankocaman.net sayfasına dön"
+        "backToHomepage": "hasankocaman.net sayfasına dön",
+        "backToAutomation": "Automation Exercise anasayfasına git"
     },
     "controls": {
         "theme": "Tema",

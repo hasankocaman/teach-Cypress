@@ -3,7 +3,8 @@
         "home": "Home",
         "practice": "Practice Area",
         "settings": "Settings",
-        "backToHomepage": "Back to hasankocaman.net"
+        "backToHomepage": "Back to hasankocaman.net",
+        "backToAutomation": "Back to Automation Exercise main page"
     },
     "controls": {
         "theme": "Theme",

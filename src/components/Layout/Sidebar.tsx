@@ -19,6 +19,24 @@ const Sidebar: React.FC<SidebarProps> = ({ currentLessonId, onLessonSelect, onNa
 
     return (
         <aside className={`sidebar ${isCollapsed ? 'collapsed' : ''}`}>
+            {!isCollapsed && (
+                <div style={{ padding: '1rem 1rem 0' }}>
+                    <a
+                        href="https://hasankocaman.github.io/automationexercise/"
+                        className="btn btn-ghost"
+                        style={{ 
+                            width: '100%', 
+                            textAlign: 'left', 
+                            justifyContent: 'flex-start',
+                            fontSize: '0.9rem',
+                            padding: '0.5rem',
+                            marginBottom: '-1rem'
+                        }}
+                    >
+                        ← {t('nav.backToAutomation')}
+                    </a>
+                </div>
+            )}
             <div className="sidebar-header">
                 {!isCollapsed && (
                     <>
